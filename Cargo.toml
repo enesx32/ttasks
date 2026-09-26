@@ -1,0 +1,11 @@
+[package]
+name = "ttasks"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+sysinfo = { version = "0.39", default-features = false, features = ["system", "disk"] }
+nvml-wrapper = "0.13"
+crossterm = "0.29.0"
+windows = { version = "0.62.2", features = [ "Win32_UI_Input_KeyboardAndMouse" ] }
+
